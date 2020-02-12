@@ -1,0 +1,63 @@
+---
+title: "Zhi_Li_DataComputing Homework Exercises"
+subtitle: "DC Exercises (ch 5 & 6)" 
+author: "Zhi Li"
+assigned exercises: " DC Ch 5 & 6 Exercises: 5.1, 5.2, 6.5, 6.6, 6.7, 6.8" 
+date: "2/11/2020"
+output: html_document
+---
+
+## Font Matter
+```{r}
+rm(list = ls())
+library(mosaicData)
+library(DataComputing)
+library(mosaic)
+
+```
+
+## Chapter 5
+
+### Problem 5.1
+```{r}
+library(mosaicData)
+library(DataComputing)
+
+ggplot(data=CPS85,aes(x=sex,y=wage ,fill=married))+geom_bar(stat='identity',position='dodge', width=.9)+ facet_wrap(~race,ncol=3) 
+
+```
+
+### Problem 5.2
+```{r}
+library(DataComputing)
+library(mosaic)
+
+ ggplot( data = NCHS, aes(x = bmi)) + geom_density(adjust = 0.91) + aes(colour = sex) + facet_wrap(~pregnant, ncol = 4) + labs(title = "") + theme(legend.position = "right") 
+```
+
+
+
+## Chapter 6
+
+### Problem 6.5
+```{r}
+# In the figure, State and Polling Organization define the frame
+```
+
+### Problem 6.6 
+```{r}
+# Glyph: Rectangle. Graphical attribute: color and text.
+```
+
+### Problem 6.7 
+```{r}
+# Poll
+```
+
+### Problem 6.8
+```{r}
+# Vertical scale: Name of polling organization.
+# Color: color band.
+```
+
+
